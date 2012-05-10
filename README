@@ -1,0 +1,7 @@
+This script sends automatically an SMS using twidge if the load past 15 minutes is higher than a set value.
+You must have twidge installed on your machine.
+
+For how to install and configure twidge check the following link:
+http://www.howtogeek.com/62018/how-to-use-the-linux-terminal-to-update-twitter/
+
+You have to add the script to crontab. I recommend running it every 5 minutes.
