@@ -1,4 +1,7 @@
-This script sends automatically an SMS using twidge if the load past 15 minutes is higher than a set value.
+This script sends automatically an SMS using twidge:
+-when someone is bruteforcing your PC, using auth log login failure notification
+-when someone has connected to your server via a predefined port (
+-the load past 15 minutes is higher than a set value.
 You must have twidge installed on your machine.
 
 For how to install and configure twidge check the following link:
