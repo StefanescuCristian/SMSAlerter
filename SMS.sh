@@ -27,16 +27,6 @@
 
 # If using the original part of the script plus added functionalities
 # you should add a cronjob for every 5 minutes
-
-# Checking twidge (command-line twitter client) is installed or not
-dpkg --list | grep twidge &> /dev/null
-
-if [ $? -ne 0 ]
-then
-echo "Twidge (command-line twitter client) is not installed :("
-echo "For how to install and configure twidge check the following links:"
-echo "http://www.howtogeek.com/62018/how-to-use-the-linux-terminal-to-update-twitter/"
-else
 # Calculate 1 hour ago time in unix time format
 HOURAGO=$(date +%s --date "1 hour ago")
 
