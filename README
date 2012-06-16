@@ -1,10 +1,10 @@
-This script sends automatically an SMS using twidge:
+This script sends automatically an SMS using ttytter:
 -when someone is bruteforcing your PC, using auth log login failure notification
--when someone has connected to your server, using UFW log and a user predefined port in the script;
+-when someone has connected to your server, using iptables log and a user predefined port in the script;
 -the load past 15 minutes is higher than a set value.
-You must have twidge installed on your machine.
+You must have ttytter installed on your machine. For ttytter to work, perl 5.8.6, curl or lynx.
 
 For how to install and configure twidge check the following link:
-http://www.howtogeek.com/62018/how-to-use-the-linux-terminal-to-update-twitter/
+http://www.floodgap.com/software/ttytter/
 
 You have to add the script to crontab. I recommend running it every 5 minutes.
