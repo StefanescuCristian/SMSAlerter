@@ -8,11 +8,3 @@ For how to install and configure ttytter check the following link:
 http://www.floodgap.com/software/ttytter/
 
 You have to add the script to crontab. I recommend running it every 5 minutes.
-
-This program is free software; you can redistribute it and/or modify it 
-under the terms of the GNU General Public License as published by the Free Software Foundation;
-either version 2 of the License, or (at your option) any later version.
-
-Copyright (C) 2012 Stefanescu Cristian <howerkraft@gmail.com>
-Original work of Mitesh Shah <Mr.Miteshah@gmail.com>
-https://github.com/MiteshShah/SecurityAlert
