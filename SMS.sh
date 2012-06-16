@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-
-# Copyright (C) 2012 Stefanescu Cristian <howerkraft@gmail.com>
-# Original work of Mitesh Shah <Mr.Miteshah@gmail.com>
-# https://github.com/MiteshShah/SecurityAlert
-# People who works on this script to make it easier and good
-
 # Checking every hour for any Authentication Failure entry founded on
 # /var/log/auth.log file and update twitter status
 # Calculate 1 hour ago time in unix time format
