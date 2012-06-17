@@ -26,7 +26,7 @@ FWTIME=$(date -d "$(echo $FW | awk '{print $1,$2,$3}')" +%s)
 if [ $FWTIME -gt $HOURAGO ]; then
 echo "Updating Twitter Status..."
 FW2=$(cat /var/log/iptables.log | grep 'DPT=2150' | tail -n1 | sed 's/\[ */\[/g' | awk '{print $3,$7,$8,$12,$13,$20,$22}')
-ttytter -silent -status=$FW2
+ttytter -silent -status="$FW2"
 fi
 
 # Now let's send a SMS if load average from the last 15 minutes is higher or equal to 2.50
@@ -46,5 +46,5 @@ nr=2.50
 if [ $(echo "$load >= $nr" | bc) -eq 1 ]; then
 echo "Updating Twitter Status..."
 time=$(uptime | awk '{print "Time: $1,"-",$(NF-4),$(NF-3),$(NF-2),$(NF-1),$(NF)}')
-ttytter -silent -status=$time
+ttytter -silent -status="$time"
 fi
