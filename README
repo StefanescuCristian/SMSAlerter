@@ -8,3 +8,5 @@ For how to install and configure ttytter check the following link:
 http://www.floodgap.com/software/ttytter/
 
 You have to add the script to crontab. I recommend running it every 5 minutes.
+
+For using the CPU and HDD utility you must have sensors set up and hddtemp installed and a sticky bit permision for it.
