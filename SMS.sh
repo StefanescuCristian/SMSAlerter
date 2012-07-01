@@ -45,6 +45,6 @@ nr=2.50
 
 if [ $(echo "$load >= $nr" | bc) -eq 1 ]; then
 echo "Updating Twitter Status..."
-time=$(uptime | awk '{print "Time: $1,"-",$(NF-4),$(NF-3),$(NF-2),$(NF-1),$(NF)}')
+time=$(uptime | awk '{print "Time: "$1,"-",$(NF-4),$(NF-3),$(NF-2),$(NF-1),$(NF)}')
 ttytter -silent -status="$time"
 fi
